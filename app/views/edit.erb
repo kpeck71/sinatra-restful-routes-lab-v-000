@@ -4,7 +4,7 @@
 <h2>Cook Time:</h2>
 <p><%=@recipe.cook_time%></p>
 
-<form action="/recipes/<%=@recipe.id %>" method="post">
+<form action="/recipes/<%=@recipe.id%>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <p>Name: <input id = "name" type="text" value="<%=@recipe.name%>" name="name"></p>
   <p>Ingredients: <input id ="ingredients" type="text" value="<%=@recipe.ingredients%>" name="ingredients"></p>
